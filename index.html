@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script defer src="js/src/cipher/aes/reg.js"></script>
+    <script defer src="js/src/cipher/chacha20-poly1305/reg.js"></script>
+    <script defer src="js/src/cipher/xchacha20-poly1305/reg.js"></script>
+    <script defer src="js/src/hash/md5/reg.js"></script>
+    <script defer src="js/src/hash/sha1/reg.js"></script>
+    <script defer src="js/src/hash/sha224/reg.js"></script>
+    <script defer src="js/src/hash/sha256/reg.js"></script>
+    <script defer src="js/src/hash/sha384/reg.js"></script>
+    <script defer src="js/src/hash/sha512/reg.js"></script>
+    <script defer src="js/src/hash/sha3-224/reg.js"></script>
+    <script defer src="js/src/hash/sha3-256/reg.js"></script>
+    <script defer src="js/src/hash/sha3-384/reg.js"></script>
+    <script defer src="js/src/hash/sha3-512/reg.js"></script>
+    <script defer src="js/src/convert/base32/reg.js"></script>
+    <script defer src="js/src/convert/morse/reg.js"></script>
+    <script defer src="js/src/convert/rot/reg.js"></script>
+    <script defer src="js/src/other/otp/reg.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Scripts</title>
+</head>
+
+<body class="container text-center font-monospace">
+    <header>
+        <h1 class="mt-4 mb-3">Scripts</h1>
+    </header>
+    <main>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-dark table-bordered text-start">
+                        <tbody>
+                            <tr>
+                                <th class="category_cipher text-center border_top_cipher border_left_cipher">Cipher</th>
+                                <th class="category_cipher text-center border_top_cipher" colspan="3">Scripts</th>
+                                <th class="category_cipher text-center border_top_cipher border_right_cipher">Checksums</th>
+                            </tr>
+                            <tr>
+                                <th class="category_cipher_1 border_top_cipher border_left_cipher"><a href="js/src/cipher/aes/" target="_blank">AES</a></th>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/aes/reg.js" target="_blank">reg</a></td>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/aes/min.js" target="_blank">min</a></td>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/aes/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_cipher_1 border_top_cipher border_right_cipher"><a href="js/src/cipher/aes/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_cipher_1 border_top_cipher border_left_cipher"><a href="js/src/cipher/chacha20-poly1305/" target="_blank">ChaCha20-Poly1305</a></th>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/chacha20-poly1305/reg.js" target="_blank">reg</a></td>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/chacha20-poly1305/min.js" target="_blank">min</a></td>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/chacha20-poly1305/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_cipher_1 border_top_cipher border_right_cipher"><a href="js/src/cipher/chacha20-poly1305/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_cipher_1 border_top_cipher border_left_cipher"><a href="js/src/cipher/xchacha20-poly1305/" target="_blank">XChaCha20-Poly1305</a></th>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/xchacha20-poly1305/reg.js" target="_blank">reg</a></td>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/xchacha20-poly1305/min.js" target="_blank">min</a></td>
+                                <td class="category_cipher_2 border_top_cipher"><a href="js/src/cipher/xchacha20-poly1305/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_cipher_1 border_top_cipher border_right_cipher"><a href="js/src/cipher/xchacha20-poly1305/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash text-center border_top_hash border_left_hash">Hash</th>
+                                <th class="category_hash text-center border_top_hash" colspan="3">Scripts</th>
+                                <th class="category_hash text-center border_top_hash border_right_hash">Checksums</th>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/md5/" target="_blank">MD5</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/md5/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/md5/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/md5/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/md5/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha1/" target="_blank">SHA-1</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha1/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha1/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha1/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha1/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha224/" target="_blank">SHA-224</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha224/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha224/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha224/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha224/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha256/" target="_blank">SHA-256</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha256/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha256/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha256/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha256/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha384/" target="_blank">SHA-384</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha384/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha384/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha384/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha384/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha512/" target="_blank">SHA-512</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha512/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha512/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha512/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha512/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha3-224/" target="_blank">SHA3-224</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-224/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-224/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-224/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha3-224/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha3-256/" target="_blank">SHA3-256</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-256/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-256/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-256/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha3-256/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha3-384/" target="_blank">SHA3-384</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-384/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-384/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-384/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha3-384/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_hash_1 border_top_hash border_left_hash"><a href="js/src/hash/sha3-512/" target="_blank">SHA3-512</a></th>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-512/reg.js" target="_blank">reg</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-512/min.js" target="_blank">min</a></td>
+                                <td class="category_hash_2 border_top_hash"><a href="js/src/hash/sha3-512/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_hash_1 border_top_hash border_right_hash"><a href="js/src/hash/sha3-512/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_convert text-center border_top_convert border_left_convert">Convert</th>
+                                <th class="category_convert text-center border_top_convert" colspan="3">Scripts</th>
+                                <th class="category_convert text-center border_top_convert border_right_convert">Checksums</th>
+                            </tr>
+                            <tr>
+                                <th class="category_convert_1 border_top_convert border_left_convert"><a href="js/src/convert/base32/" target="_blank">Base32</a></th>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/base32/reg.js" target="_blank">reg</a></td>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/base32/min.js" target="_blank">min</a></td>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/base32/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_convert_1 border_top_convert border_right_convert"><a href="js/src/convert/base32/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_convert_1 border_top_convert border_left_convert"><a href="js/src/convert/morse/" target="_blank">Morse</a></th>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/morse/reg.js" target="_blank">reg</a></td>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/morse/min.js" target="_blank">min</a></td>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/morse/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_convert_1 border_top_convert border_right_convert"><a href="js/src/convert/morse/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_convert_1 border_top_convert border_left_convert"><a href="js/src/convert/rot/" target="_blank">ROT</a></th>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/rot/reg.js" target="_blank">reg</a></td>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/rot/min.js" target="_blank">min</a></td>
+                                <td class="category_convert_2 border_top_convert"><a href="js/src/convert/rot/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_convert_1 border_top_convert border_right_convert"><a href="js/src/convert/rot/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                            <tr>
+                                <th class="category_other text-center border_top_other border_left_other">Other</th>
+                                <th class="category_other text-center border_top_other" colspan="3">Scripts</th>
+                                <th class="category_other text-center border_top_other border_right_other">Checksums</th>
+                            </tr>
+                            <tr>
+                                <th class="category_other_1 border_top_other border_left_other border_bottom_other"><a href="js/src/other/otp/" target="_blank">OTP</a></th>
+                                <td class="category_other_2 border_top_other border_bottom_other"><a href="js/src/other/otp/reg.js" target="_blank">reg</a></td>
+                                <td class="category_other_2 border_top_other border_bottom_other"><a href="js/src/other/otp/min.js" target="_blank">min</a></td>
+                                <td class="category_other_2 border_top_other border_bottom_other"><a href="js/src/other/otp/embed.txt" target="_blank">embed</a></td>
+                                <td class="category_other_1 border_top_other border_right_other border_bottom_other"><a href="js/src/other/otp/sha256sum.txt" target="_blank">sha256sum.txt</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

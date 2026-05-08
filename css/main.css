@@ -1,0 +1,146 @@
+body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+th, td {
+    vertical-align: middle;
+}
+
+/* Cipher */
+.border_top_cipher {
+    border-top: 2px solid #0000cc !important;
+}
+
+.border_left_cipher {
+    border-left: 2px solid #0000cc !important;
+}
+
+.border_right_cipher {
+    border-right: 2px solid #0000cc !important;
+}
+
+.category_cipher {
+    background-color: #0000cc !important;
+}
+
+.category_cipher_1 {
+    background-color: #000055 !important;
+}
+
+.category_cipher_2 {
+    background-color: #000077 !important;
+}
+
+/* Hash */
+.border_top_hash {
+    border-top: 2px solid #cc0000 !important;
+}
+
+.border_left_hash {
+    border-left: 2px solid #cc0000 !important;
+}
+
+.border_right_hash {
+    border-right: 2px solid #cc0000 !important;
+}
+
+.category_hash {
+    background-color: #cc0000 !important;
+}
+
+.category_hash_1 {
+    background-color: #550000 !important;
+}
+
+.category_hash_2 {
+    background-color: #770000 !important;
+}
+
+/* Convert */
+.border_top_convert {
+    border-top: 2px solid #00cc00 !important;
+}
+
+.border_left_convert {
+    border-left: 2px solid #00cc00 !important;
+}
+
+.border_right_convert {
+    border-right: 2px solid #00cc00 !important;
+}
+
+.category_convert {
+    background-color: #00cc00 !important;
+}
+
+.category_convert_1 {
+    background-color: #005500 !important;
+}
+
+.category_convert_2 {
+    background-color: #008800 !important;
+}
+
+/* Other */
+.border_top_other {
+    border-top: 2px solid #ff0088 !important;
+}
+
+.border_left_other {
+    border-left: 2px solid #ff0088 !important;
+}
+
+.border_right_other {
+    border-right: 2px solid #ff0088 !important;
+}
+
+.border_bottom_other {
+    border-bottom: 2px solid #ff0088 !important;
+}
+
+.category_other {
+    background-color: #ff0088 !important;
+}
+
+.category_other_1 {
+    background-color: #880044 !important;
+}
+
+.category_other_2 {
+    background-color: #aa0066 !important;
+}
+
+/* External */
+.border_top_external {
+    border-top: 2px solid #ff8800 !important;
+}
+
+.border_left_external {
+    border-left: 2px solid #ff8800 !important;
+}
+
+.border_right_external {
+    border-right: 2px solid #ff8800 !important;
+}
+
+.border_bottom_external {
+    border-bottom: 2px solid #ff8800 !important;
+}
+
+.category_external {
+    background-color: #ff8800 !important;
+}
+
+.category_external_1 {
+    background-color: #aa3300 !important;
+}
+
+.category_external_2 {
+    background-color: #cc5500 !important;
+}
